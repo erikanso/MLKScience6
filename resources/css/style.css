@@ -1,0 +1,93 @@
+header {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  background-color: purple;
+  width: 100%;
+  z-index: 5;
+}
+
+header img {
+  display: flex;
+  justify-content: flex-start;
+}
+
+header nav {
+  padding: 1.3rem 0 0 0.5rem;
+}
+
+header li {
+  display: inline;
+  color: gold;
+  font-size: 18px;
+  padding: 0 10px;
+  flex-wrap: wrap;
+}
+
+header nav li:link {
+  color: gold;
+}
+
+header nav li:hover {
+  text-decoration: underline;
+}
+
+header nav li:visited {
+  color: white;
+}
+
+header nav li:first-child {
+  display: flex;
+  align-self: center;
+  padding-bottom: 0.25rem;
+  color: white;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 710px) {
+  header ul {
+    display: none;
+  }
+}
+
+content {
+  position: relative;
+  top: 5.9rem;
+}
+
+.headline {
+  background-image: url("../images/ScholarsAtWork.JPG");
+  background-size: cover;
+  height: 500px;
+}
+
+.headline h1 {
+  color: white;
+}
+
+.previews {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.previews a {
+  display: flex;
+
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: purple;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  color: white;
+}
+
+footer .contact {
+  color: gold;
+}
